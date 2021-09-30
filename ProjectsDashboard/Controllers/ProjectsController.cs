@@ -25,7 +25,7 @@ namespace ProjectsDashboard.Controllers
         // GET: Projects
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Projects.Where(email => email.Email.Equals(User.Identity.Name)).ToListAsync());
+            return View(await _context.Projects.Where(email => email.Team.Contains(User.Identity.Name)).ToListAsync());
         }
 
         [Authorize]

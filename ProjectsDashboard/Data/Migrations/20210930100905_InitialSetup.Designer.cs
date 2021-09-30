@@ -10,7 +10,7 @@ using ProjectsDashboard.Data;
 namespace ProjectsDashboard.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210930055437_InitialSetup")]
+    [Migration("20210930100905_InitialSetup")]
     partial class InitialSetup
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
