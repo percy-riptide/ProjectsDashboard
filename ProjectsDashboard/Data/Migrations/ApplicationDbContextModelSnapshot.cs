@@ -229,6 +229,9 @@ namespace ProjectsDashboard.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Manager")
                         .HasColumnType("nvarchar(max)");
 

@@ -15,6 +15,7 @@ namespace ProjectsDashboard.Models
         public string Progress { get; set; }
         public string Team { get; set; }
         public string Manager { get; set; }
+        public string Email { get; set; }
 
         public Projects()
         {

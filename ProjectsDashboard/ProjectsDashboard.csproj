@@ -10,6 +10,14 @@
     <Compile Remove="Data\Migrations\20210929173119_initial-push.Designer.cs" />
     <Compile Remove="Data\Migrations\20210929174901_initialsetup.cs" />
     <Compile Remove="Data\Migrations\20210929174901_initialsetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210929175914_InitialSetup.cs" />
+    <Compile Remove="Data\Migrations\20210929175914_InitialSetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210930052038_InitialSetup.cs" />
+    <Compile Remove="Data\Migrations\20210930052038_InitialSetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210930052826_InitialSetup.cs" />
+    <Compile Remove="Data\Migrations\20210930052826_InitialSetup.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210930053211_InitialSetup.cs" />
+    <Compile Remove="Data\Migrations\20210930053211_InitialSetup.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

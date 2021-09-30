@@ -16,7 +16,8 @@ namespace ProjectsDashboard.Data.Migrations
                     Description = table.Column<string>(nullable: true),
                     Progress = table.Column<string>(nullable: true),
                     Team = table.Column<string>(nullable: true),
-                    Manager = table.Column<string>(nullable: true)
+                    Manager = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

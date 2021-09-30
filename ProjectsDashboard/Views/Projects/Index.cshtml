@@ -40,23 +40,23 @@ else
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Progress)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Team)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Manager)
-                    </td>
-                    <td>
-                        <a asp-action="Details" asp-route-id="@item.ID">Details</a>
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Progress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Team)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Manager)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a>
+                </td>
+            </tr>
             }
         </tbody>
     </table>

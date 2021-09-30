@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProjectsDashboard.Data;
 using ProjectsDashboard.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace ProjectsDashboard.Controllers
 {
@@ -24,7 +25,7 @@ namespace ProjectsDashboard.Controllers
         // GET: Projects
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Projects.ToListAsync());
+            return View(await _context.Projects.Where(email => email.Email.Equals(User.Identity.Name)).ToListAsync());
         }
 
         [Authorize]
@@ -73,7 +74,7 @@ namespace ProjectsDashboard.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Description,Progress,Team,Manager")] Projects projects)
+        public async Task<IActionResult> Create([Bind("ID,Name,Description,Progress,Team,Manager,Email")] Projects projects)
         {
             if (ModelState.IsValid)
             {
