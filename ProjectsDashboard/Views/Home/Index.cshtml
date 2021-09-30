@@ -1,8 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@using Microsoft.AspNetCore.Identity
 
 <div class="text-center">
     <h1 class="display-4">Welcome!</h1>
-    <p>Please Login or Register to access your Projects.</p>
+    @if (@User.Identity.Name != null)
+    { <p>Please goto My Projects tab or <a href="../Projects">Click Here</a> to view your Projects!</p> }
+    else 
+    { <p>Please <a asp-area="Identity" asp-page="/Account/Login">Login</a> or <a asp-area="Identity" asp-page="/Account/Register">Register</a> to view your Projects!</p> }      
 </div>
